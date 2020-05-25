@@ -1,1 +1,0 @@
-@call "PrismLibrary\PrismLibrary.sln"

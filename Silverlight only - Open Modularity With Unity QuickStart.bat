@@ -1,1 +1,0 @@
-@call "Quickstarts\Modularity\Silverlight\ModularityWithUnity\ModularityWithUnity.Silverlight.sln"
