@@ -62,17 +62,17 @@ namespace Microsoft.Practices.Prism.Tests.ViewModel
             ExceptionAssert.Throws<ArgumentException>(() => PropertySupport.ExtractPropertyName(() => this.InstanceField));
         }
 
-        [TestMethod]
-        [Ignore]    // cannot build the expression
-        public void WhenExpressionRepresentsAPropertyWithNoGetMethod_ThenAnExceptionIsThrown()
-        {
-            ExceptionAssert.Throws<ArgumentException>(() =>
-                       PropertySupport.ExtractPropertyName(
-                               Expression.Lambda<Func<int>>(
-                                   Expression.MakeMemberAccess(
-                                       null,
-                                       typeof(PropertySupportFixture).GetProperty("SetOnlyStaticProperty")))));
-        }
+        //[TestMethod]
+        //[Ignore]    // cannot build the expression
+        //public void WhenExpressionRepresentsAPropertyWithNoGetMethod_ThenAnExceptionIsThrown()
+        //{
+        //    ExceptionAssert.Throws<ArgumentException>(() =>
+        //               PropertySupport.ExtractPropertyName(
+        //                       Expression.Lambda<Func<int>>(
+        //                           Expression.MakeMemberAccess(
+        //                               null,
+        //                               typeof(PropertySupportFixture).GetProperty("SetOnlyStaticProperty")))));
+        //}
 
         public static int StaticProperty { get; set; }
         public int InstanceProperty { get; set; }
