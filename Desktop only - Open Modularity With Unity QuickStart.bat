@@ -1,1 +1,0 @@
-@call "Quickstarts\Modularity\Desktop\ModularityWithUnity\ModularityWithUnity.Desktop.sln"
